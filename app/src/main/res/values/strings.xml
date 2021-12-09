@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyGrades</string>
+    <string name="mathTitle">Mathematik</string>
+    <string name="englishTitle">Englisch</string>
+    <string name="frenchTitle">Französisch</string>
+    <string name="chemistryTitle">Chemie</string>
+    <string name="grade">Keine Noten</string>
 </resources>
