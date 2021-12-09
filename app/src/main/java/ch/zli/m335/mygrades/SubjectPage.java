@@ -1,4 +1,4 @@
-package ch.zli.m335.mygrades.model;
+package ch.zli.m335.mygrades;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import ch.zli.m335.mygrades.R;
 
 public class SubjectPage extends AppCompatActivity {
     TextView subjectPageTitle;
