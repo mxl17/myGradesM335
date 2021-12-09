@@ -1,8 +1,10 @@
-package ch.zli.m335.mygrades;
+package ch.zli.m335.mygrades.model;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import ch.zli.m335.mygrades.R;
 
 public class FormPage extends AppCompatActivity {
     @Override

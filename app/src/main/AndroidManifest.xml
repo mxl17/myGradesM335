@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyGrades">
         <activity
-            android:name=".MainActivity"
+            android:name=".model.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SubjectPage">
+        <activity android:name=".model.SubjectPage">
         </activity>
-        <activity android:name=".FormPage">
+        <activity android:name=".model.FormPage">
         </activity>
     </application>
 

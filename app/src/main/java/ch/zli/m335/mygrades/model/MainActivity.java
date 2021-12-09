@@ -1,4 +1,4 @@
-package ch.zli.m335.mygrades;
+package ch.zli.m335.mygrades.model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import ch.zli.m335.mygrades.R;
 
 public class MainActivity extends AppCompatActivity {
 
