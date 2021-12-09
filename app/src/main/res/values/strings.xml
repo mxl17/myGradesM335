@@ -5,4 +5,6 @@
     <string name="frenchTitle">Französisch</string>
     <string name="chemistryTitle">Chemie</string>
     <string name="grade">Keine Noten</string>
+
+    <string name="subjectPageTitle">Noten </string>
 </resources>
