@@ -6,5 +6,18 @@
     <string name="chemistryTitle">Chemie</string>
     <string name="grade">Keine Noten</string>
 
+    <string name="labelSubject">Schulfach</string>
+
     <string name="subjectPageTitle">Noten </string>
+    <string name="formPageTitle">Note erfassen</string>
+    <string name="testTitleLabel">Prüfungstitel</string>
+    <string name="markLabel">Note</string>
+    <string name="submitForm">Abschliessen</string>
+
+    <string-array name="subjectSpinner">
+        <item>Mathematik</item>
+        <item>Englisch</item>
+        <item>Französisch</item>
+        <item>Chemie</item>
+    </string-array>
 </resources>

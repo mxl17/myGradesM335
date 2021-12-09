@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".SubjectPage">
         </activity>
+        <activity android:name=".FormPage">
+        </activity>
     </application>
 
 </manifest>
