@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         final LinearLayout englishLayout = findViewById(R.id.horizontalEnglish);
         final LinearLayout frenchLayout = findViewById(R.id.horizontalFrench);
         final LinearLayout chemistryLayout = findViewById(R.id.horizontalChemistry);
+        final FloatingActionButton addMarkButton = findViewById(R.id.addButtonMP);
 
         Intent subjectPageIntent = new Intent(MainActivity.this, SubjectPage.class);
 
@@ -50,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 subjectPageIntent.putExtra("title", "Chemie");
                 startActivity(subjectPageIntent);
+            }
+        });
+
+        addMarkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent addMark = new Intent(MainActivity.this, FormPage.class);
+                startActivity(addMark);
             }
         });
     }
