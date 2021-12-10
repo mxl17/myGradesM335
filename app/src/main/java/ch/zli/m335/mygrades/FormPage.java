@@ -33,7 +33,7 @@ public class FormPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Grade grade = new Grade();
-                grade.grade = Integer.parseInt(String.valueOf(gradeValue.getText()));
+                grade.grade = Float.parseFloat(String.valueOf(gradeValue.getText()));
                 grade.subject = subjectSpinner.getSelectedItem().toString();
                 grade.testTitle = String.valueOf(testTitle.getText());
 
