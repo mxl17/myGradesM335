@@ -41,7 +41,13 @@ public class FormPage extends AppCompatActivity {
 
                 Intent intent = new Intent(FormPage.this, MainActivity.class);
                 startActivity(intent);
+
+                sendBroadcast();
             }
         });
+    }
+
+    public void sendBroadcast() {
+        this.sendBroadcast(new Intent(this, MyGradesWidget.class));
     }
 }

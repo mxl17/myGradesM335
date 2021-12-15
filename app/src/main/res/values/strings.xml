@@ -20,7 +20,7 @@
         <item>Französisch</item>
         <item>Chemie</item>
     </string-array>
-    <string name="appwidget_text">Mathematik</string>
+    <string name="appwidget_text">Mathematik \nKeine Note</string>
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This is an app widget description</string>
 </resources>
