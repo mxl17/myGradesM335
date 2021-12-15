@@ -12,10 +12,8 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.DecimalFormat;
-import java.util.List;
 
 import ch.zli.m335.mygrades.model.AppDatabase;
-import ch.zli.m335.mygrades.model.Grade;
 import ch.zli.m335.mygrades.model.GradeDao;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         final LinearLayout chemistryLayout = findViewById(R.id.horizontalChemistry);
         final FloatingActionButton addMarkButton = findViewById(R.id.addButtonMP);
         final TextView mathGrade = findViewById(R.id.mathGrade);
+        final TextView englishGrade = findViewById(R.id.englishGrade);
+        final TextView frenchGrade = findViewById(R.id.frenchGrade);
+        final TextView chemistryGrade = findViewById(R.id.chemistryGrade);
 
         Intent subjectPageIntent = new Intent(MainActivity.this, SubjectPage.class);
 
@@ -40,8 +41,26 @@ public class MainActivity extends AppCompatActivity {
                 AppDatabase.class, "mygrades").allowMainThreadQueries().build();
         GradeDao gradeDao = db.gradeDao();
 
-        Float mathGrades = gradeDao.getMathAverage();
-        mathGrade.setText(df.format(mathGrades));
+        Float mathAverage = gradeDao.getMathAverage();
+        Float englishAverage = gradeDao.getEnglishAverage();
+        Float frenchAverage = gradeDao.getFrenchAverage();
+        Float chemistryAverage = gradeDao.getChemistryAverage();
+
+        if (mathAverage != null) {
+            mathGrade.setText(df.format(mathAverage));
+        }
+
+        if (englishAverage != null) {
+            englishGrade.setText(df.format(englishAverage));
+        }
+
+        if (frenchAverage != null) {
+            frenchGrade.setText(df.format(frenchAverage));
+        }
+
+        if (chemistryAverage != null) {
+            chemistryGrade.setText(df.format(chemistryAverage));
+        }
 
         mathLayout.setOnClickListener(new View.OnClickListener() {
             @Override
