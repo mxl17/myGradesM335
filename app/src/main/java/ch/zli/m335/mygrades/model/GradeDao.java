@@ -14,7 +14,7 @@ public interface GradeDao {
     @Query("Select avg(grade.grade) FROM grade WHERE subject = 'Mathematik'")
     Float getMathAverage();
 
-    @Query("SELECT * FROM grade WHERE subject = 'english'")
+    @Query("SELECT * FROM grade WHERE subject = 'Englisch'")
     List<Grade> getAllEnglishGrades();
 
     @Query("SELECT avg(grade.grade) FROM grade WHERE subject = 'Englisch'")
