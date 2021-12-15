@@ -8,14 +8,29 @@ import java.util.List;
 
 @Dao
 public interface GradeDao {
-    @Query("Select * FROM grade WHERE subject = 'Mathematik'")
-    List<Grade> getAllMath();
+    @Query("Select grade.grade FROM grade WHERE subject = 'Mathematik'")
+    List<Float> getAllMathGrades();
 
     @Query("Select avg(grade.grade) FROM grade WHERE subject = 'Mathematik'")
     Float getMathAverage();
 
-    @Query("SELECT * FROM grade WHERE subject = 'english'")
-    List<Grade> getAllEnglish();
+    @Query("SELECT grade.grade FROM grade WHERE subject = 'english'")
+    List<Float> getAllEnglishGrades();
+
+    @Query("SELECT avg(grade.grade) FROM grade WHERE subject = 'Englisch'")
+    Float getEnglishAverage();
+
+    @Query("SELECT avg(grade.grade) FROM grade WHERE subject = 'Französisch'")
+    List<Float> getAllFrenchGrades();
+
+    @Query("SELECT avg(grade.grade) FROM grade WHERE subject = 'Französisch'")
+    Float getFrenchAverage();
+
+    @Query("SELECT avg(grade.grade) FROM grade WHERE subject = 'Chemie'")
+    List<Float> getAllChemistryGrades();
+
+    @Query("SELECT avg(grade.grade) FROM grade WHERE subject = 'Chemie'")
+    Float getChemistryAverage();
 
     @Insert
     void insertAll(Grade... grades);
